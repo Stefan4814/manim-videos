@@ -308,3 +308,5 @@ class MyScene(Scene):
         poisson.to_edge(DOWN)
         self.play(Write(poisson))
         self.wait()
+        self.play(FadeOut(*[mob for mob in self.mobjects]))
+        self.wait()
